@@ -25,5 +25,5 @@ RUN pnpm build users
 EXPOSE 4000
 
 # Define the command to run the app
-CMD ["pnpm", "start:prod"]
+CMD ["pnpm", "start:prod:gateway"]
 

@@ -18,11 +18,11 @@ import { JwtService } from '@nestjs/jwt';
             subgraphs: [
               {
                 name: 'users',
-                url: 'http://localhost:4001/graphql',
+                url: 'http://13.213.8.85:8080/graphql',
               },
               {
                 name: 'proposals',
-                url: 'http://localhost:4002/graphql',
+                url: 'http://13.229.64.124:8080/graphql',
               },
             ],
           }),
