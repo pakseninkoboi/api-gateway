@@ -11,8 +11,8 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Pull Docker Image
-        run: sudo docker pull fajarspace/proposals-api-gateway:latest
+        run: sudo docker pull fajarspace/proposals-service-api-gateway:latest
       - name: Delete old docker container
-        run: sudo docker rm -f proposals-api-gateway-container || true
+        run: sudo docker rm -f proposals-service-api-gateway-container || true
       - name: Run docker container
-        run: sudo docker run -d -p 8080:4002 --name proposals-api-gateway-container fajarspace/proposals-api-gateway
+        run: sudo docker run -d -p 8080:4002 --name proposals-service-api-gateway-container fajarspace/proposals-service-api-gateway
