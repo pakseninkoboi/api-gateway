@@ -15,4 +15,4 @@ jobs:
       - name: Delete old docker container
         run: sudo docker rm -f proposals-services-api-gateway-container || true
       - name: Run docker container
-        run: sudo docker run -d -p 8080:4000 --name proposals-services-api-gateway-container fajarspace/proposals-services-api-gateway
+        run: sudo docker run -d -p 8080:4003 --name proposals-services-api-gateway-container fajarspace/proposals-services-api-gateway
