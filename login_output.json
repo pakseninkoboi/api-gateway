@@ -1,0 +1,16 @@
+{
+  "data": {
+    "Login": {
+      "accessToken": "some-access-token",
+      "error": null,
+      "refreshToken": "some-refresh-token",
+      "user": {
+        "email": "testuser@example.com",
+        "id": "1",
+        "password": "testpassword",
+        "phone_number": 1234567890,
+        "username": "testuser"
+      }
+    }
+  }
+}

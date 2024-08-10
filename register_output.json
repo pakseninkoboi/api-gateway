@@ -1,0 +1,13 @@
+{
+  "data": {
+    "register": {
+      "activation_token": "some-activation-token",
+      "user": {
+        "email": "testuser@example.com",
+        "id": "1",
+        "phone_number": 1234567890,
+        "username": "testuser"
+      }
+    }
+  }
+}

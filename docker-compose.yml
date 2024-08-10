@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  users:
+    ports:
+      - '4001:4001'
+    build:
+      context: .
+      dockerfile: ./apps/users/Dockerfile.prod
+    environment:
+      - .env
+
+  proposals:
+    ports:
+      - '4002:4002'
+    build:
+      context: .
+      dockerfile: ./apps/proposals/Dockerfile.prod
+    environment:
+      - .env
+
+  gateway:
+    ports:
+      - '4000:4000'
+    build:
+      context: .
+      dockerfile: ./apps/gateway/Dockerfile.prod

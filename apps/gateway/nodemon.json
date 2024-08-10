@@ -1,0 +1,5 @@
+{
+  "watch": ["apps/gateway/src"],
+  "ext": "ts",
+  "exec": "pnpm run start:dev"
+}
