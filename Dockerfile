@@ -22,7 +22,7 @@ RUN pnpm install prisma
 RUN pnpm build users
 
 # Expose the port the app runs on
-EXPOSE 4000
+EXPOSE 4003
 
 # Define the command to run the app
 CMD ["pnpm", "start:prod:gateway"]

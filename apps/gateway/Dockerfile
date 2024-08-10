@@ -20,7 +20,7 @@ RUN pnpm install @nestjs/cli
 RUN pnpm build gateway
 
 # Expose the port the app runs on
-EXPOSE 5000
+EXPOSE 4003
 
 # Define the command to run the app
 CMD ["pnpm", "start:prod:gateway"]

@@ -14,6 +14,6 @@ async function bootstrap() {
 
   // Enable CORS with the specified options
   app.enableCors(corsOptions);
-  await app.listen(4000, '0.0.0.0'); // Update port to 3000
+  await app.listen(4003, '0.0.0.0'); // Update port to 3000
 }
 bootstrap();
