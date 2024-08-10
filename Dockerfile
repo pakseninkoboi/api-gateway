@@ -14,13 +14,12 @@ COPY tsconfig.base.json ./
 # COPY pnpm-lock.yaml ./
 RUN npm install -g pnpm && pnpm install
 
+# Copy specific app and libs directories
+COPY apps/gateway ./apps/gateway
+
 RUN pnpm install @nestjs/cli
 
-RUN pnpm install prisma
-
-# Build the application
-RUN pnpm build users
-
+RUN pnpm build gateway
 # Expose the port the app runs on
 EXPOSE 4003
 
